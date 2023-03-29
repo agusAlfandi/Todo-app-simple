@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "736253118637",
+    "project_id": "rn-sosial-app",
+    "storage_bucket": "rn-sosial-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736253118637:android:c02208846c92cc7a521e24",
+        "android_client_info": {
+          "package_name": "com.todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736253118637-poc994itiqvdc6csqmt6djnu6noqtqo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC40_FMh0YR9K2uDyMDGCVfQD56kh8s1Qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736253118637-74h34i183dflkpc316f9h9gg7prhuba7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
