@@ -8,7 +8,7 @@ import { Loading } from '../../Component';
 import { showMessage } from 'react-native-flash-message';
 
 const { height, width } = Dimensions.get('window');
-
+//save data with custom useState
 const Register = () => {
   const [form, setForm] = useForm({
     email: '',
@@ -18,7 +18,7 @@ const Register = () => {
 
   const Send = () => {
     setLoading(true);
-
+    // auth data user email and password
     Fire.auth()
       .createUserWithEmailAndPassword(form.email, form.pass)
       .then((userCredential) => {

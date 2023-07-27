@@ -3,6 +3,7 @@ import React from 'react';
 import { colors } from '../../../Utils';
 
 const Loading = () => {
+  //feature loading dari react native community
   return (
     <View style={styles.wrapper}>
       <ActivityIndicator size="large" />

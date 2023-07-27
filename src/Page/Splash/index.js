@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { getData } from '../../Utils';
-
+// the user algorithm suddenly exits the application
 const Splash = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {

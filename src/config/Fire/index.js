@@ -1,5 +1,5 @@
 import firebase from 'firebase/compat/app';
-
+// config connection frontend with backend
 firebase.initializeApp({
   apiKey: 'AIzaSyDSue-dS1eTX_637hK3fzb-CClcD0q5jdk',
   authDomain: 'rn-sosial-app.firebaseapp.com',

@@ -19,13 +19,14 @@ const Header = () => {
   const [masuk, setMasuk] = useState({});
   const [on, setOn] = useState(false);
   const navigation = useNavigation();
+  //algorithm profile if user login with email google or register
   useEffect(() => {
     if (masuk) {
       const data = {
         Dummy,
         user: 'Agus Alfandi',
       };
-      // console.log('profile: ', data);
+
       setOn(true);
       setUser(data);
     } else {
@@ -35,7 +36,7 @@ const Header = () => {
             name: res.displayName,
             photo: { uri: res.photoURL },
           };
-          // console.log('local storage :', data);
+
           setUser(data);
           setOn(false);
         })
@@ -49,7 +50,6 @@ const Header = () => {
     getData('email')
       .then((res) => {
         setMasuk(res);
-        // console.log('email: ', res);
       })
       .catch((error) => {
         console.log(error);
@@ -63,7 +63,6 @@ const Header = () => {
         .then(() => {
           AsyncStorage.removeItem('email')
             .then(() => {
-              // console.log('berhasil logout');
               navigation.replace('Login');
             })
             .catch((error) => {
@@ -79,14 +78,12 @@ const Header = () => {
         .then(() => {
           AsyncStorage.removeItem('user').then(() => {
             navigation.replace('Login');
-            // console.log('sukses logout');
           });
         })
         .catch((error) => {
           console.log('account google error: ', error);
         });
     }
-    // console.log('params in func: ', login);
   };
 
   return (
